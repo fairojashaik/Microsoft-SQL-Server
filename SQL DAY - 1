@@ -1,0 +1,13 @@
+Microsoft SQL Server 
+
+To find out Microsoft SQL Server Version Execute below command 👇.
+➡️ SELECT @@VERSION;
+
+➡️ SELECT 
+    SERVERPROPERTY('ProductVersion') AS ProductVersion, 
+    SERVERPROPERTY('ProductLevel') AS ProductLevel, 
+    SERVERPROPERTY('Edition') AS Edition;
+
+➡️ sqlcmd -S <ServerName> -Q "SELECT @@VERSION"
+
+➡️ Invoke-Sqlcmd -Query "SELECT @@VERSION" -ServerInstance "<ServerName>"  👈 In Powershell.
